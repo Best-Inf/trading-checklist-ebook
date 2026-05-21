@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist ก่อนเข้าไม้ 2026 | Best.Better.Life</title>
+    <meta name="description" content="Checklist ก่อนเข้าไม้ 2026 - เช็กตัวเอง แผน ความเสี่ยง ก่อนกดทุกไม้ โดย Best.Better.Life">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* ========== CSS RESET & VARIABLES ========== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: rgba(17, 24, 39, 0.7);
+            --bg-card-hover: rgba(25, 35, 60, 0.8);
+            --bg-glass: rgba(255, 255, 255, 0.03);
+            --bg-glass-border: rgba(255, 255, 255, 0.06);
+
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --text-accent: #fbbf24;
+
+            --accent-gold: #fbbf24;
+            --accent-gold-dim: rgba(251, 191, 36, 0.15);
+            --accent-gold-glow: rgba(251, 191, 36, 0.3);
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-red-dim: rgba(239, 68, 68, 0.15);
+            --accent-green: #22c55e;
+            --accent-green-dim: rgba(34, 197, 94, 0.15);
+            --accent-blue: #3b82f6;
+            --accent-blue-dim: rgba(59, 130, 246, 0.15);
+            --accent-purple: #a855f7;
+            --accent-purple-dim: rgba(168, 85, 247, 0.15);
+            --accent-cyan: #06b6d4;
+
+            --gradient-gold: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
+            --gradient-dark: linear-gradient(180deg, #0a0e1a 0%, #111827 50%, #0f172a 100%);
+            --gradient-card: linear-gradient(145deg, rgba(251, 191, 36, 0.05), rgba(17, 24, 39, 0.9));
+
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.5);
+            --shadow-gold: 0 0 40px rgba(251, 191, 36, 0.1);
+
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+
+            --font-thai: 'Noto Sans Thai', sans-serif;
+            --font-en: 'Inter', sans-serif;
+
+            --page-max-width: 780px;
+            --page-padding: 2rem;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-thai);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.85;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            body {
+                background: white;
+                color: #1a1a1a;
+                font-size: 11pt;
+                line-height: 1.6;
+            }
+            .cover-section {
+                page-break-after: always;
+                background: #0a0e1a !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .chapter {
+                page-break-inside: avoid;
+                page-break-before: auto;
+            }
+            .chapter-card {
+                background: white !important;
+                border: 1px solid #ddd !important;
+                box-shadow: none !important;
+            }
+            .floating-orb, .progress-bar-container, .toc-nav, .back-to-top {
+                display: none !important;
+            }
+            .page-wrapper {
+                max-width: 100% !important;
+            }
+        }
+
+        /* ========== AMBIENT BACKGROUND ========== */
+        .ambient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            animation: floatOrb 20s ease-in-out infinite;
+        }
+
+        .floating-orb:nth-child(1) {
+            width: 400px; height: 400px;
+            background: var(--accent-gold);
+            top: 10%; left: -5%;
+            animation-delay: 0s;
+        }
+        .floating-orb:nth-child(2) {
+            width: 300px; height: 300px;
+            background: var(--accent-purple);
+            top: 40%; right: -10%;
+            animation-delay: -7s;
+        }
+        .floating-orb:nth-child(3) {
+            width: 350px; height: 350px;
+            background: var(--accent-blue);
+            bottom: 10%; left: 30%;
+            animation-delay: -14s;
+        }
+
+        @keyframes floatOrb {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(30px, -40px) scale(1.1); }
+            50% { transform: translate(-20px, 20px) scale(0.95); }
+            75% { transform: translate(40px, 30px) scale(1.05); }
+        }
+
+        /* ========== READING PROGRESS BAR ========== */
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--gradient-gold);
+            transition: width 0.1s ease;
+            box-shadow: 0 0 10px var(--accent-gold-glow);
+        }
+
+        /* ========== PAGE WRAPPER ========== */
+        .page-wrapper {
+            position: relative;
+            z-index: 1;
+            max-width: var(--page-max-width);
+            margin: 0 auto;
+            padding: 0 var(--page-padding);
+        }
+
+        /* ========== COVER SECTION ========== */
+        .cover-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-bg-image {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background:
+                /* Grid pattern */
+                linear-gradient(rgba(251, 191, 36, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(251, 191, 36, 0.04) 1px, transparent 1px),
+                /* Diagonal grid */
+                linear-gradient(45deg, rgba(168, 85, 247, 0.02) 1px, transparent 1px),
+                linear-gradient(-45deg, rgba(59, 130, 246, 0.02) 1px, transparent 1px),
+                /* Radial glow spots */
+                radial-gradient(ellipse 600px 400px at 20% 30%, rgba(251, 191, 36, 0.08), transparent),
+                radial-gradient(ellipse 500px 500px at 80% 60%, rgba(168, 85, 247, 0.06), transparent),
+                radial-gradient(ellipse 400px 300px at 50% 80%, rgba(59, 130, 246, 0.05), transparent),
+                /* Base gradient */
+                linear-gradient(160deg, #0a0e1a 0%, #0f1629 30%, #131b3a 60%, #0e1225 100%);
+            background-size:
+                60px 60px,
+                60px 60px,
+                80px 80px,
+                80px 80px,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%;
+        }
+
+        .cover-bg-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                /* Bokeh circles */
+                radial-gradient(circle 80px at 15% 25%, rgba(251, 191, 36, 0.12), transparent 70%),
+                radial-gradient(circle 50px at 75% 35%, rgba(251, 191, 36, 0.08), transparent 70%),
+                radial-gradient(circle 120px at 85% 75%, rgba(168, 85, 247, 0.06), transparent 70%),
+                radial-gradient(circle 60px at 30% 70%, rgba(59, 130, 246, 0.08), transparent 70%),
+                radial-gradient(circle 40px at 60% 20%, rgba(251, 191, 36, 0.1), transparent 70%),
+                radial-gradient(circle 90px at 45% 55%, rgba(251, 191, 36, 0.04), transparent 70%);
+            animation: shimmerBokeh 12s ease-in-out infinite alternate;
+        }
+
+        .cover-bg-image::after {
+            content: '';
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            right: 5%;
+            height: 40%;
+            background:
+                /* Candlestick-like vertical lines */
+                repeating-linear-gradient(90deg,
+                    transparent, transparent 18px,
+                    rgba(251, 191, 36, 0.03) 18px, rgba(251, 191, 36, 0.03) 20px,
+                    transparent 20px, transparent 38px
+                );
+            mask-image: linear-gradient(0deg,
+                rgba(0,0,0,0.4) 0%,
+                rgba(0,0,0,0.15) 50%,
+                transparent 100%
+            );
+            -webkit-mask-image: linear-gradient(0deg,
+                rgba(0,0,0,0.4) 0%,
+                rgba(0,0,0,0.15) 50%,
+                transparent 100%
+            );
+            opacity: 0.5;
+        }
+
+        @keyframes shimmerBokeh {
+            0% { opacity: 0.6; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.02); }
+        }
+
+        .cover-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(10, 14, 26, 0.2) 0%,
+                rgba(10, 14, 26, 0.5) 50%,
+                rgba(10, 14, 26, 0.92) 100%
+            );
+            z-index: 1;
+        }
+
+        .cover-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 3rem 2rem;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .cover-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border: 1px solid var(--accent-gold);
+            border-radius: 50px;
+            color: var(--accent-gold);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+            font-family: var(--font-en);
+            background: var(--accent-gold-dim);
+            animation: fadeInUp 1.2s ease-out 0.2s both;
+        }
+
+        .cover-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1.2s ease-out 0.4s both;
+        }
+
+        .cover-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 1.2s ease-out 0.5s both;
+        }
+
+        .cover-year {
+            font-family: var(--font-en);
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 900;
+            color: rgba(251, 191, 36, 0.08);
+            letter-spacing: 12px;
+            margin-top: 1rem;
+            animation: fadeInUp 1.2s ease-out 0.6s both;
+        }
+
+        .cover-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--gradient-gold);
+            margin: 2rem auto;
+            animation: fadeInUp 1.2s ease-out 0.7s both;
+        }
+
+        .cover-author {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 2px;
+            animation: fadeInUp 1.2s ease-out 0.8s both;
+        }
+
+        .cover-author strong {
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .cover-tagline {
+            margin-top: 3rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            animation: fadeInUp 1.2s ease-out 1s both;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: fadeInUp 1.2s ease-out 1.2s both;
+        }
+
+        .scroll-indicator .arrow {
+            width: 24px;
+            height: 24px;
+            border-right: 2px solid var(--accent-gold);
+            border-bottom: 2px solid var(--accent-gold);
+            transform: rotate(45deg);
+            opacity: 0.4;
+            animation: bounceDown 2s ease-in-out infinite;
+        }
+
+        @keyframes bounceDown {
+            0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.4; }
+            50% { transform: rotate(45deg) translateY(8px); opacity: 0.8; }
+        }
+
+        /* ========== INTRO SECTION ========== */
+        .intro-section {
+            padding: 5rem 0 3rem;
+        }
+
+        .intro-text {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 2;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .intro-text .highlight {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .intro-pillars {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .pillar {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: var(--bg-glass);
+            border: 1px solid var(--bg-glass-border);
+            border-radius: var(--radius-md);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .pillar:hover {
+            background: var(--accent-gold-dim);
+            border-color: rgba(251, 191, 36, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .pillar-icon {
+            font-size: 1.5rem;
+        }
+
+        .pillar-label {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* ========== CHAPTER STYLING ========== */
+        .chapter {
+            padding: 2rem 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .chapter.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .chapter-number {
+            font-family: var(--font-en);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .chapter-number::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--accent-gold-dim), transparent);
+        }
+
+        .chapter-title {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            font-weight: 800;
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .chapter-card {
+            background: var(--gradient-card);
+            border: 1px solid var(--bg-glass-border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s ease;
+        }
+
+        .chapter-card:hover {
+            border-color: rgba(251, 191, 36, 0.15);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .chapter-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            line-height: 2;
+        }
+
+        .chapter-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ========== QUESTION LIST STYLING ========== */
+        .question-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .question-list li {
+            position: relative;
+            padding: 0.75rem 0 0.75rem 2rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.3s ease;
+        }
+
+        .question-list li:last-child {
+            border-bottom: none;
+        }
+
+        .question-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .question-list li:hover {
+            color: var(--text-primary);
+            padding-left: 2.5rem;
+        }
+
+        /* ========== CALLOUT / INSIGHT BOX ========== */
+        .insight-box {
+            margin: 2rem 0;
+            padding: 1.75rem 2rem;
+            border-radius: var(--radius-md);
+            border-left: 3px solid;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .insight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.06;
+            z-index: 0;
+        }
+
+        .insight-box.gold {
+            border-color: var(--accent-gold);
+            background: var(--accent-gold-dim);
+        }
+
+        .insight-box.red {
+            border-color: var(--accent-red);
+            background: var(--accent-red-dim);
+        }
+
+        .insight-box.green {
+            border-color: var(--accent-green);
+            background: var(--accent-green-dim);
+        }
+
+        .insight-box.blue {
+            border-color: var(--accent-blue);
+            background: var(--accent-blue-dim);
+        }
+
+        .insight-box.purple {
+            border-color: var(--accent-purple);
+            background: var(--accent-purple-dim);
+        }
+
+        .insight-box p {
+            position: relative;
+            z-index: 1;
+            color: var(--text-primary) !important;
+            font-weight: 500;
+            font-size: 1.05rem;
+            line-height: 1.9;
+            margin-bottom: 0 !important;
+        }
+
+        .insight-box .insight-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            opacity: 0.7;
+            font-family: var(--font-en);
+        }
+
+        .insight-box.gold .insight-label { color: var(--accent-gold); }
+        .insight-box.red .insight-label { color: var(--accent-red); }
+        .insight-box.green .insight-label { color: var(--accent-green); }
+        .insight-box.blue .insight-label { color: var(--accent-blue); }
+        .insight-box.purple .insight-label { color: var(--accent-purple); }
+
+        /* ========== QUICK CHECKLIST SECTION ========== */
+        .checklist-section {
+            padding: 3rem 0;
+        }
+
+        .checklist-container {
+            background: var(--gradient-card);
+            border: 1px solid rgba(251, 191, 36, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 3rem;
+            box-shadow: var(--shadow-gold);
+        }
+
+        .checklist-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .checklist-header h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .checklist-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .checklist-items {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            border-radius: var(--radius-md);
+            background: var(--bg-glass);
+            border: 1px solid var(--bg-glass-border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .checklist-item:hover {
+            background: rgba(251, 191, 36, 0.05);
+            border-color: rgba(251, 191, 36, 0.15);
+        }
+
+        .checklist-item.checked {
+            background: var(--accent-green-dim);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .checklist-item.checked .check-box {
+            background: var(--accent-green);
+            border-color: var(--accent-green);
+        }
+
+        .checklist-item.checked .check-box::after {
+            opacity: 1;
+            transform: rotate(45deg) scale(1);
+        }
+
+        .checklist-item.checked .check-text {
+            color: var(--text-primary);
+        }
+
+        .check-box {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            border: 2px solid var(--text-muted);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+            margin-top: 2px;
+        }
+
+        .check-box::after {
+            content: '';
+            width: 6px;
+            height: 10px;
+            border: 2px solid white;
+            border-top: none;
+            border-left: none;
+            transform: rotate(45deg) scale(0);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .check-text {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        .check-counter {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--bg-glass-border);
+        }
+
+        .check-counter .count {
+            font-family: var(--font-en);
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .check-counter .label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .checklist-result {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1.05rem;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .checklist-result.show {
+            opacity: 1;
+        }
+
+        .checklist-result.ready {
+            background: var(--accent-green-dim);
+            color: var(--accent-green);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .checklist-result.not-ready {
+            background: var(--accent-red-dim);
+            color: var(--accent-red);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        /* ========== NO-TRADE DAY ========== */
+        .notrade-section {
+            padding: 2rem 0 3rem;
+        }
+
+        .notrade-card {
+            background: linear-gradient(145deg, rgba(59, 130, 246, 0.08), rgba(17, 24, 39, 0.9));
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+        }
+
+        .notrade-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .notrade-items {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .notrade-items li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: rgba(59, 130, 246, 0.05);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(59, 130, 246, 0.08);
+        }
+
+        .notrade-number {
+            font-family: var(--font-en);
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            min-width: 30px;
+        }
+
+        .notrade-text {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* ========== CLOSING MESSAGE ========== */
+        .closing-section {
+            padding: 3rem 0 2rem;
+        }
+
+        .closing-card {
+            text-align: center;
+            background: linear-gradient(145deg, rgba(251, 191, 36, 0.08), rgba(17, 24, 39, 0.95));
+            border: 1px solid rgba(251, 191, 36, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 3rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .closing-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(251, 191, 36, 0.05), transparent 50%);
+            pointer-events: none;
+        }
+
+        .closing-card .quote-mark {
+            font-size: 4rem;
+            line-height: 1;
+            color: rgba(251, 191, 36, 0.2);
+            font-family: Georgia, serif;
+            margin-bottom: 1rem;
+        }
+
+        .closing-card p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 2;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .closing-card .author-sig {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(251, 191, 36, 0.15);
+        }
+
+        .closing-card .author-sig .name {
+            font-family: var(--font-en);
+            font-weight: 800;
+            font-size: 1.2rem;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ========== SOFT SELL SECTION ========== */
+        .softsell-section {
+            padding: 2rem 0 5rem;
+        }
+
+        .softsell-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--bg-glass-border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .softsell-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+
+        .softsell-cta {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 1rem 2.5rem;
+            background: var(--gradient-gold);
+            color: var(--bg-primary);
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-thai);
+            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+        }
+
+        .softsell-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(251, 191, 36, 0.4);
+        }
+
+        .softsell-cta:active {
+            transform: translateY(0);
+        }
+
+        /* ========== FOOTER ========== */
+        .ebook-footer {
+            padding: 2rem 0;
+            border-top: 1px solid var(--bg-glass-border);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .ebook-footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .ebook-footer .footer-brand {
+            font-family: var(--font-en);
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        /* ========== TABLE OF CONTENTS NAV ========== */
+        .toc-nav {
+            position: fixed;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toc-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--text-muted);
+            opacity: 0.3;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        .toc-dot:hover {
+            opacity: 0.6;
+            transform: scale(1.3);
+        }
+
+        .toc-dot.active {
+            background: var(--accent-gold);
+            opacity: 1;
+            transform: scale(1.4);
+            box-shadow: 0 0 10px var(--accent-gold-glow);
+        }
+
+        /* ========== BACK TO TOP ========== */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--accent-gold-dim);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: var(--accent-gold);
+            color: var(--bg-primary);
+        }
+
+        /* ========== SECTION DIVIDER ========== */
+        .section-divider {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .section-divider .dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .section-divider .dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            opacity: 0.4;
+        }
+
+        .section-divider .dot:nth-child(2) {
+            opacity: 0.7;
+            width: 6px;
+            height: 6px;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            :root {
+                --page-padding: 1.25rem;
+            }
+
+            .cover-content {
+                padding: 2rem 1rem;
+            }
+
+            .chapter-card {
+                padding: 1.75rem;
+            }
+
+            .checklist-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .intro-pillars {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .toc-nav {
+                display: none;
+            }
+
+            .closing-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 15px;
+            }
+
+            .chapter-card {
+                padding: 1.5rem;
+            }
+
+            .checklist-container {
+                padding: 1.5rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="floating-orb"></div>
+        <div class="floating-orb"></div>
+        <div class="floating-orb"></div>
+    </div>
+
+    <!-- Reading Progress -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Table of Contents Navigation -->
+    <nav class="toc-nav" id="tocNav">
+        <button class="toc-dot active" data-target="cover" title="หน้าปก"></button>
+        <button class="toc-dot" data-target="ch1" title="บทที่ 1"></button>
+        <button class="toc-dot" data-target="ch2" title="บทที่ 2"></button>
+        <button class="toc-dot" data-target="ch3" title="บทที่ 3"></button>
+        <button class="toc-dot" data-target="ch4" title="บทที่ 4"></button>
+        <button class="toc-dot" data-target="ch5" title="บทที่ 5"></button>
+        <button class="toc-dot" data-target="ch6" title="บทที่ 6"></button>
+        <button class="toc-dot" data-target="ch7" title="บทที่ 7"></button>
+        <button class="toc-dot" data-target="ch8" title="บทที่ 8"></button>
+        <button class="toc-dot" data-target="quickcheck" title="Quick Checklist"></button>
+        <button class="toc-dot" data-target="closing" title="ปิดท้าย"></button>
+    </nav>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" title="กลับขึ้นด้านบน">↑</button>
+
+    <!-- ========== COVER ========== -->
+    <section class="cover-section" id="cover">
+        <div class="cover-bg-image"></div>
+        <div class="cover-overlay"></div>
+        <div class="cover-content">
+            <div class="cover-badge">E-Book • Free Guide</div>
+            <h1 class="cover-title">Checklist<br>ก่อนเข้าไม้</h1>
+            <div class="cover-year">2026</div>
+            <p class="cover-subtitle">ใช้ก่อนกดทุกไม้ · เช็กตัวเอง · เช็กแผน · เช็กความเสี่ยง</p>
+            <div class="cover-divider"></div>
+            <p class="cover-author">โดย <strong>Best.Better.Life</strong></p>
+            <p class="cover-tagline">
+                นี่ไม่ใช่สัญญาณซื้อขาย<br>
+                แต่เป็น Checklist ที่ช่วยให้คุณเช็ก 3 อย่างก่อนเข้าไม้<br>
+                <strong style="color: var(--accent-gold);">ตัวเอง · แผน · ความเสี่ยง</strong>
+            </p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <div class="page-wrapper">
+
+        <!-- INTRO -->
+        <section class="intro-section">
+            <div class="intro-text">
+                <p>เพราะหลายครั้ง ไม้ที่พังไม่ได้พังเพราะตลาด<br>
+                แต่พังเพราะเราเข้าไม้ <span class="highlight">ทั้งที่ตัวเองยังไม่พร้อม</span></p>
+            </div>
+            <div class="intro-pillars">
+                <div class="pillar">
+                    <span class="pillar-icon">🧠</span>
+                    <span class="pillar-label">ตัวเอง</span>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-icon">📋</span>
+                    <span class="pillar-label">แผน</span>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-icon">🛡️</span>
+                    <span class="pillar-label">ความเสี่ยง</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"><div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>
+
+        <!-- ========== CHAPTER 1 ========== -->
+        <section class="chapter" id="ch1">
+            <div class="chapter-number">Chapter 01</div>
+            <h2 class="chapter-title">วันนี้คุณควรเทรดจริงไหม?</h2>
+            <div class="chapter-card">
+                <p>ก่อนถามว่า Buy หรือ Sell ทุกเช้าที่เราวางแผน ให้ถามก่อนว่า:</p>
+                <ul class="question-list">
+                    <li>วันนี้ใจนิ่งพอไหม</li>
+                    <li>นอนพอไหม</li>
+                    <li>มีเวลาคิดตามแผนไหม</li>
+                    <li>เพิ่งแพ้แล้วยังมีอารมณ์เอาคืนไหม</li>
+                    <li>กำลังรีบพิสูจน์ตัวเองอยู่ไหม</li>
+                </ul>
+                <div class="insight-box gold">
+                    <div class="insight-label">Key Insight</div>
+                    <p>ถ้าคำตอบคือ "ยังไม่นิ่ง" — ไม้ที่ดีที่สุดของวันนี้ อาจเป็น <strong>ไม่เข้า</strong></p>
+                </div>
+                <p>การไม่เทรด ไม่ใช่พลาดโอกาสเสมอไป<br>
+                บางวัน มันคือการรักษาทุนและสติไว้ก่อน</p>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 2 ========== -->
+        <section class="chapter" id="ch2">
+            <div class="chapter-number">Chapter 02</div>
+            <h2 class="chapter-title">ตอนนี้ตลาดกำลังเล่นเกมแบบไหน?</h2>
+            <div class="chapter-card">
+                <p>ก่อนเข้าไม้ คุณต้องตอบให้ได้ก่อนว่า:</p>
+                <p style="text-align: center; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0;">
+                    ตลาดกำลัง<span style="color: var(--accent-green);">ขึ้น</span> · 
+                    ตลาดกำลัง<span style="color: var(--accent-red);">ลง</span> · 
+                    หรือตลาดกำลัง<span style="color: var(--accent-amber);">แกว่งในกรอบ</span>
+                </p>
+                <div class="insight-box red">
+                    <div class="insight-label">Warning</div>
+                    <p>ถ้าตอบไม่ได้ แปลว่าคุณยังไม่รู้ว่ากำลังเล่นเกมอะไร</p>
+                </div>
+                <ul class="question-list">
+                    <li>ตลาดขึ้น → อย่ารีบสวนเพราะคิดว่า "ขึ้นมาเยอะแล้ว"</li>
+                    <li>ตลาดลง → อย่ารีบช้อนเพราะคิดว่า "ราคาถูกแล้ว"</li>
+                    <li>ตลาดแกว่ง → อย่าไล่ราคากลางกรอบเพราะกลัวตกรถ</li>
+                </ul>
+                <p>จุดเข้าอาจทำให้คุณได้เปิดออเดอร์<br>
+                แต่<strong style="color: var(--accent-gold);">สภาวะตลาด</strong> เป็นตัวบอกว่าไม้นั้นมีความได้เปรียบไหม</p>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 3 ========== -->
+        <section class="chapter" id="ch3">
+            <div class="chapter-number">Chapter 03</div>
+            <h2 class="chapter-title">ไม้นี้มาจากแผน หรือมาจากอารมณ์?</h2>
+            <div class="chapter-card">
+                <p>ก่อนเข้าไม้ เขียนให้ได้ 1 ประโยค:</p>
+                <div class="insight-box blue">
+                    <div class="insight-label">Template</div>
+                    <p>"ผมจะเข้าไม้นี้ เพราะ ________"</p>
+                </div>
+                <p>ถ้าคำตอบคือ:</p>
+                <ul class="question-list">
+                    <li>กลัวตกรถ</li>
+                    <li>อยากเอาคืน</li>
+                    <li>เห็นคนอื่นเข้า</li>
+                    <li>กราฟดูเหมือนจะไป</li>
+                    <li>รู้สึกว่ารอบนี้ต้องได้</li>
+                </ul>
+                <div class="insight-box red">
+                    <div class="insight-label">Stop</div>
+                    <p>ให้หยุดก่อน — อารมณ์มันไว้มาก แต่เราต้องตั้งสติให้ดี<br>
+                    เพราะนั่นไม่ใช่แผน <strong>นั่นคืออารมณ์ ที่ปลอมตัวเป็นโอกาส</strong></p>
+                </div>
+                <p>ไม้ที่ดี ควรอธิบายได้แบบเรียบง่าย<br>
+                ไม่ใช่ต้องหาเหตุผลมาเข้าข้างตัวเอง หลังกดไปแล้ว</p>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 4 ========== -->
+        <section class="chapter" id="ch4">
+            <div class="chapter-number">Chapter 04</div>
+            <h2 class="chapter-title">จุดเข้ามีเหตุผลพอไหม?</h2>
+            <div class="chapter-card">
+                <p>คุณไม่จำเป็นต้องมีเครื่องมือเยอะ แต่ก่อนเข้า อย่างน้อยควรตอบได้ว่า:</p>
+                <ul class="question-list">
+                    <li>เข้าใกล้จุดสำคัญไหม</li>
+                    <li>มีแรงตอบสนองจากราคาหรือยัง</li>
+                    <li>กำลังเข้าเร็วไปไหม</li>
+                    <li>กำลังไล่ราคาอยู่ไหม</li>
+                    <li>ถ้ารออีกนิด แผนจะชัดขึ้นไหม</li>
+                </ul>
+                <p>หลายคนแพ้ ไม่ใช่เพราะไม่มีเครื่องมือ<br>
+                แต่เพราะเข้าไม้ ตอนที่ <strong style="color: var(--accent-red);">"ยังไม่ควรเข้า"</strong></p>
+                <div class="insight-box green">
+                    <div class="insight-label">Remember</div>
+                    <p>ถ้าราคาอยู่กลางทาง ไม่มีจุดอ้างอิง ไม่มีเหตุผลชัด อย่าเพิ่งเรียกมันว่า Setup<br>
+                    บางครั้ง การรอให้ชัดขึ้นอีกนิด คือต้นทุนที่ถูกกว่าการโดน SL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 5 ========== -->
+        <section class="chapter" id="ch5">
+            <div class="chapter-number">Chapter 05</div>
+            <h2 class="chapter-title">SL วางจากโครงสร้าง หรือวางจากความกลัว?</h2>
+            <div class="chapter-card">
+                <p>ก่อนเข้าไม้ ต้องรู้ก่อนว่า:</p>
+                <ul class="question-list">
+                    <li>ถ้าผิดทาง จะออกตรงไหน</li>
+                    <li>จุดไหนบอกว่าแผนนี้ใช้ไม่ได้แล้ว</li>
+                    <li>ถ้าถึงจุดนั้น จะยอมออกจริงไหม</li>
+                </ul>
+                <div class="insight-box gold">
+                    <div class="insight-label">Key Insight</div>
+                    <p>SL ที่ดี ไม่ใช่จุดที่คุณ "ทนขาดทุนไหว"<br>
+                    แต่คือจุดที่บอกว่า <strong>มุมมองนี้ผิดแล้ว</strong></p>
+                </div>
+                <p>ถ้า SL อยู่ <strong style="color: var(--accent-amber);">ใกล้เกินไป</strong> เพราะกลัวเสียเงิน → คุณอาจโดนสะบัดออก ทั้งที่แผนยังไม่เสีย</p>
+                <p>ถ้า SL <strong style="color: var(--accent-red);">ไกลเกินไป</strong> เพราะไม่อยากแพ้ → คุณอาจไม่ได้คุมความเสี่ยง แต่กำลังปล่อยให้อารมณ์คุมแทน</p>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 6 ========== -->
+        <section class="chapter" id="ch6">
+            <div class="chapter-number">Chapter 06</div>
+            <h2 class="chapter-title">TP มีเหตุผล หรือแค่อยากได้กำไร?</h2>
+            <div class="chapter-card">
+                <p>ก่อนเข้าไม้ ให้ถามว่า:</p>
+                <ul class="question-list">
+                    <li>ราคามีเหตุผลจะไปถึง TP ไหม</li>
+                    <li>มีแนวรับแนวต้านขวางอยู่ไหม</li>
+                    <li>ตลาดมีแรงพอไปต่อไหม</li>
+                    <li>RR คุ้มกับความเสี่ยงไหม</li>
+                </ul>
+                <div class="insight-box purple">
+                    <div class="insight-label">Key Insight</div>
+                    <p>TP ที่ดี ไม่ใช่จุดที่คุณ "อยากได้"<br>
+                    แต่คือจุดที่ตลาด <strong>มีเหตุผลจะไปถึง</strong></p>
+                </div>
+                <p>ถ้า TP ไกลมาก แต่เหตุผลมีน้อย<br>
+                นั่นอาจไม่ใช่ความมั่นใจ แต่อาจเป็น<strong style="color: var(--accent-purple);">ความหวัง ที่แต่งตัวเหมือนแผน</strong></p>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 7 ========== -->
+        <section class="chapter" id="ch7">
+            <div class="chapter-number">Chapter 07</div>
+            <h2 class="chapter-title">Lot นี้ทำให้คุณยังคิดชัดไหม?</h2>
+            <div class="chapter-card">
+                <p>ก่อนกดเข้าไม้ ให้ถามตัวเองตรง ๆ:</p>
+                <ul class="question-list">
+                    <li>ถ้าโดน SL จะยังใจนิ่งไหม</li>
+                    <li>ถ้าแพ้ไม้นี้ จะยังเทรดตามแผนได้ไหม</li>
+                    <li>ถ้าไม้ติดลบ จะเริ่มอยากเลื่อน SL ไหม</li>
+                    <li>ถ้าแพ้ จะอยากเพิ่ม lot เพื่อเอาคืนไหม</li>
+                </ul>
+                <div class="insight-box red">
+                    <div class="insight-label">Warning</div>
+                    <p>ถ้า lot ทำให้คุณเริ่มภาวนา แทนที่จะทำตามแผน<br>
+                    แปลว่า <strong>lot ใหญ่เกินไป</strong></p>
+                </div>
+                <p>ไม้ที่ดี ไม่ใช่ไม้ที่กำไรเยอะที่สุด<br>
+                แต่คือไม้ที่ <strong style="color: var(--accent-gold);">แม้ผิดทาง คุณยังควบคุมตัวเองได้</strong></p>
+                <p>เพราะถ้า lot ทำให้ Mindset พัง ต่อให้ Setup สวย ก็ไม่ใช่ไม้ที่ดี</p>
+            </div>
+        </section>
+
+        <!-- ========== CHAPTER 8 ========== -->
+        <section class="chapter" id="ch8">
+            <div class="chapter-number">Chapter 08</div>
+            <h2 class="chapter-title">ถ้าแพ้ไม้นี้ คุณจะเรียนรู้อะไร?</h2>
+            <div class="chapter-card">
+                <p>ก่อนเข้าไม้ ให้เตรียมจดไว้เลยว่า:</p>
+                <ul class="question-list">
+                    <li>เข้าเพราะอะไร</li>
+                    <li>ตอนเข้ารู้สึกอะไร</li>
+                    <li>ตลาดอยู่สภาวะไหน</li>
+                    <li>SL / TP วางตรงไหน</li>
+                    <li>ถ้าแพ้ จะถือว่าเรียนเรื่องอะไร</li>
+                </ul>
+                <div class="insight-box gold">
+                    <div class="insight-label">Core Principle</div>
+                    <p>ขาดทุนแล้วไม่จด = <strong style="color: var(--accent-red);">จ่ายซ้ำ</strong><br>
+                    ขาดทุนแล้วเห็นตัวเอง = <strong style="color: var(--accent-green);">เริ่มเรียน</strong></p>
+                </div>
+                <p>ตลาดไม่ได้มีใบเกรดให้คุณ<br>
+                ดังนั้น <strong style="color: var(--accent-gold);">Journal</strong> คือวิธีที่คุณต้องเฉลยให้ตัวเอง</p>
+            </div>
+        </section>
+
+        <div class="section-divider"><div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>
+
+        <!-- ========== QUICK CHECKLIST ========== -->
+        <section class="checklist-section" id="quickcheck">
+            <div class="checklist-container">
+                <div class="checklist-header">
+                    <h2>✅ Quick Checklist ก่อนกดเข้าไม้</h2>
+                    <p>ติ๊กทุกข้อก่อนเข้าไม้</p>
+                </div>
+                <ul class="checklist-items" id="checklistItems">
+                    <li class="checklist-item" data-index="0">
+                        <div class="check-box"></div>
+                        <span class="check-text">วันนี้ใจนิ่งพอ</span>
+                    </li>
+                    <li class="checklist-item" data-index="1">
+                        <div class="check-box"></div>
+                        <span class="check-text">ไม่ได้เข้าเพราะอยากเอาคืน</span>
+                    </li>
+                    <li class="checklist-item" data-index="2">
+                        <div class="check-box"></div>
+                        <span class="check-text">รู้ว่าตลาดกำลังขึ้น ลง หรือแกว่ง</span>
+                    </li>
+                    <li class="checklist-item" data-index="3">
+                        <div class="check-box"></div>
+                        <span class="check-text">เขียนเหตุผลเข้าไม้ได้ 1 ประโยค</span>
+                    </li>
+                    <li class="checklist-item" data-index="4">
+                        <div class="check-box"></div>
+                        <span class="check-text">จุดเข้าไม่ได้มาจาก FOMO</span>
+                    </li>
+                    <li class="checklist-item" data-index="5">
+                        <div class="check-box"></div>
+                        <span class="check-text">มี SL ก่อนกดเข้า</span>
+                    </li>
+                    <li class="checklist-item" data-index="6">
+                        <div class="check-box"></div>
+                        <span class="check-text">มี TP ที่มีเหตุผล</span>
+                    </li>
+                    <li class="checklist-item" data-index="7">
+                        <div class="check-box"></div>
+                        <span class="check-text">Lot ไม่ใหญ่จนทำให้ใจเสีย</span>
+                    </li>
+                    <li class="checklist-item" data-index="8">
+                        <div class="check-box"></div>
+                        <span class="check-text">ถ้าเงื่อนไขไม่ครบ ยอมไม่เข้าได้</span>
+                    </li>
+                    <li class="checklist-item" data-index="9">
+                        <div class="check-box"></div>
+                        <span class="check-text">พร้อมจดหลังจบไม้ ไม่ว่าชนะหรือแพ้</span>
+                    </li>
+                </ul>
+                <div class="check-counter">
+                    <div class="count" id="checkCount">0 / 10</div>
+                    <div class="label">ข้อที่ผ่าน</div>
+                </div>
+                <div class="checklist-result" id="checkResult"></div>
+            </div>
+            <div class="insight-box gold" style="margin-top: 2rem;">
+                <div class="insight-label">Remember</div>
+                <p>ถ้าติ๊กไม่ครบ อย่าเพิ่งเข้า<br>
+                ตลาดเปิดอีกหลายวัน แต่ทุนกับสติของคุณ ไม่ควรถูกใช้แบบไม่มีแผน</p>
+            </div>
+        </section>
+
+        <div class="section-divider"><div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>
+
+        <!-- ========== NO-TRADE DAY ========== -->
+        <section class="notrade-section chapter" id="notrade">
+            <div class="chapter-number">Bonus</div>
+            <h2 class="chapter-title">📘 No-Trade Day Checklist</h2>
+            <div class="notrade-card">
+                <h3>🛑 วันที่ไม่เข้าไม้ ไม่ใช่วันที่เสียเปล่า</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">ถ้าวันนี้เลือกไม่เทรด ให้จด 3 ข้อ:</p>
+                <ul class="notrade-items">
+                    <li>
+                        <span class="notrade-number">01</span>
+                        <span class="notrade-text">ทำไมวันนี้เลือกไม่เข้า</span>
+                    </li>
+                    <li>
+                        <span class="notrade-number">02</span>
+                        <span class="notrade-text">ถ้าเข้าเพราะอารมณ์ น่าจะพลาดตรงไหน</span>
+                    </li>
+                    <li>
+                        <span class="notrade-number">03</span>
+                        <span class="notrade-text">วันนี้ตลาดสอนอะไร โดยที่เราไม่ต้องเสียเงิน</span>
+                    </li>
+                </ul>
+                <div class="insight-box green" style="margin-top: 1.5rem;">
+                    <div class="insight-label">Mindset</div>
+                    <p>การไม่เข้า คือทักษะของคนที่เริ่มคุมตัวเองได้<br>
+                    เพราะเทรดเดอร์ที่ดี ไม่ได้เก่งแค่ตอนกดเข้า<br>
+                    แต่เก่งตอนรู้ว่า <strong>วันนี้ยังไม่ควรกด</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"><div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>
+
+        <!-- ========== CLOSING ========== -->
+        <section class="closing-section chapter" id="closing">
+            <div class="closing-card">
+                <div class="quote-mark">"</div>
+                <p>ถ้าคุณเพิ่งจ่ายค่าเทอมตลาดมา<br>
+                <strong style="color: var(--accent-gold);">อย่ารีบเอาคืนครับ</strong></p>
+                <p>เริ่มจากจดให้ได้ก่อนว่า<br>
+                ตลาดสอนอะไรคุณ</p>
+                <p>แล้วไม้ถัดไป<br>
+                ค่อยให้ <strong style="color: var(--accent-gold);">"แผน"</strong> เป็นคนพาเข้า<br>
+                ไม่ใช่อารมณ์</p>
+                <div class="author-sig">
+                    <div class="name">Best.Better.Life</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SOFT SELL ========== -->
+        <section class="softsell-section chapter">
+            <div class="softsell-card">
+                <p>ถ้าคุณอยากมีกรอบช่วยเช็กตลาด<br>
+                ก่อนเข้าไม้ให้ชัดขึ้น</p>
+                <p>เดี๋ยวผมมี Guide ต่อให้ครับ<br>
+                ไม่ใช่เพื่อให้เข้าไม้เยอะขึ้น<br>
+                แต่เพื่อช่วยให้คุณรู้ว่า</p>
+                <p><strong style="color: var(--accent-gold);">ไม้ไหนควรรอ · ไม้ไหนควรปล่อย · และไม้ไหนไม่ควรเข้าเลย</strong></p>
+                <button class="softsell-cta" onclick="alert('พิมพ์คำว่า Checklist เพื่อรับ Guide ครับ 📋')">
+                    พิมพ์ "Checklist" เพื่อรับ Guide
+                </button>
+            </div>
+        </section>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="ebook-footer">
+            <p>© 2026 <span class="footer-brand">Best.Better.Life</span> — All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">เนื้อหานี้ไม่ใช่สัญญาณซื้อขาย ไม่ใช่คำแนะนำการลงทุน</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ========== READING PROGRESS BAR ==========
+        function updateProgress() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        // ========== SCROLL REVEAL (Intersection Observer) ==========
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -10% 0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.chapter').forEach(ch => observer.observe(ch));
+
+        // ========== TABLE OF CONTENTS DOTS ==========
+        const tocDots = document.querySelectorAll('.toc-dot');
+        const sections = [];
+
+        tocDots.forEach(dot => {
+            const targetId = dot.getAttribute('data-target');
+            const section = document.getElementById(targetId);
+            if (section) sections.push({ dot, section });
+            
+            dot.addEventListener('click', () => {
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        function updateActiveDot() {
+            const scrollPos = window.scrollY + window.innerHeight / 3;
+            let activeIdx = 0;
+
+            sections.forEach((s, i) => {
+                if (scrollPos >= s.section.offsetTop) {
+                    activeIdx = i;
+                }
+            });
+
+            tocDots.forEach(d => d.classList.remove('active'));
+            if (sections[activeIdx]) {
+                sections[activeIdx].dot.classList.add('active');
+            }
+        }
+
+        // ========== BACK TO TOP ==========
+        const backToTop = document.getElementById('backToTop');
+        
+        function updateBackToTop() {
+            if (window.scrollY > 600) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========== INTERACTIVE CHECKLIST ==========
+        const checklistItems = document.querySelectorAll('.checklist-item');
+        const checkCount = document.getElementById('checkCount');
+        const checkResult = document.getElementById('checkResult');
+        let checked = new Set();
+
+        checklistItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const index = parseInt(item.getAttribute('data-index'));
+                
+                if (checked.has(index)) {
+                    checked.delete(index);
+                    item.classList.remove('checked');
+                } else {
+                    checked.add(index);
+                    item.classList.add('checked');
+                }
+
+                const count = checked.size;
+                checkCount.textContent = count + ' / 10';
+
+                if (count === 10) {
+                    checkResult.textContent = '✅ พร้อมเข้าไม้ — เทรดตามแผนครับ';
+                    checkResult.className = 'checklist-result show ready';
+                } else if (count > 0) {
+                    checkResult.textContent = '⚠️ ยังไม่ครบ — ตลาดเปิดอีกหลายวัน อย่ารีบ';
+                    checkResult.className = 'checklist-result show not-ready';
+                } else {
+                    checkResult.className = 'checklist-result';
+                }
+            });
+        });
+
+        // ========== EVENT LISTENERS ==========
+        window.addEventListener('scroll', () => {
+            updateProgress();
+            updateActiveDot();
+            updateBackToTop();
+        }, { passive: true });
+
+        // Initial calls
+        updateProgress();
+        updateActiveDot();
+        updateBackToTop();
+    </script>
+</body>
+</html>
