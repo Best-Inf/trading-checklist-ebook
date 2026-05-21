@@ -911,18 +911,23 @@
 
         .softsell-cta {
             display: inline-block;
+            box-sizing: border-box;
+            max-width: 100%;
             margin-top: 1.5rem;
             padding: 1rem 2.5rem;
             background: var(--gradient-gold);
             color: var(--bg-primary);
             font-weight: 700;
             font-size: 1.1rem;
+            line-height: 1.5;
             border-radius: 50px;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
             font-family: var(--font-thai);
             box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+            text-decoration: none;
+            touch-action: manipulation;
         }
 
         .softsell-cta:hover {
@@ -932,6 +937,30 @@
 
         .softsell-cta:active {
             transform: translateY(0);
+        }
+
+        .softsell-cta:focus-visible {
+            outline: 3px solid rgba(251, 191, 36, 0.45);
+            outline-offset: 4px;
+        }
+
+        .softsell-contact {
+            margin-top: 1.25rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .softsell-contact a,
+        .ebook-footer a {
+            color: var(--accent-gold);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .softsell-contact a:hover,
+        .ebook-footer a:hover {
+            text-decoration: underline;
         }
 
         /* ========== FOOTER ========== */
@@ -1497,15 +1526,20 @@
                 ไม่ใช่เพื่อให้เข้าไม้เยอะขึ้น<br>
                 แต่เพื่อช่วยให้คุณรู้ว่า</p>
                 <p><strong style="color: var(--accent-gold);">ไม้ไหนควรรอ · ไม้ไหนควรปล่อย · และไม้ไหนไม่ควรเข้าเลย</strong></p>
-                <button class="softsell-cta" onclick="alert('พิมพ์คำว่า Checklist เพื่อรับ Guide ครับ 📋')">
-                    พิมพ์ "Checklist" เพื่อรับ Guide
-                </button>
+                <a class="softsell-cta" href="https://line.me/R/oaMessage/@860ykesw/ebook" target="_blank" rel="noopener noreferrer">
+                    ทัก LINE พิมพ์ "ebook" เพื่อรับ Guide
+                </a>
+                <p class="softsell-contact">
+                    มีคำถามเพิ่มเติม ทัก IG ได้ที่
+                    <a href="https://www.instagram.com/best.better.life/" target="_blank" rel="noopener noreferrer">@best.better.life</a>
+                </p>
             </div>
         </section>
 
         <!-- ========== FOOTER ========== -->
         <footer class="ebook-footer">
             <p>© 2026 <span class="footer-brand">Best.Better.Life</span> — All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">ติดต่อ IG: <a href="https://www.instagram.com/best.better.life/" target="_blank" rel="noopener noreferrer">@best.better.life</a></p>
             <p style="margin-top: 0.5rem; font-size: 0.8rem;">เนื้อหานี้ไม่ใช่สัญญาณซื้อขาย ไม่ใช่คำแนะนำการลงทุน</p>
         </footer>
 
